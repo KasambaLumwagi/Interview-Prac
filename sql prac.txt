@@ -1,0 +1,18 @@
+select name from customers where count(item)>=2
+select name ,from customers groupby manager
+
+select name from employees where salary >(select avg(salary) as avg_sal from employees)
+
+
+select names from employees where orders not in (select orders from orders)
+
+select count(orders) as countOrd from orders groupby CustomerId
+
+select avg(sal) as average salaries from employees groupby dep
+
+
+easy retriaval and update of data in databases 
+
+reduced redundancy, 
+
+select c.name from customer c join on c.Customerid = p.Customerid 
